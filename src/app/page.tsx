@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Logo from "@/assets/images/logo.svg";
+import HeroImage from "@/assets/images/hero_background.svg";
 
 export default function Home() {
   return (
@@ -22,11 +23,16 @@ export default function Home() {
             <a href="#" className="text-white text-base font-bold">
               FAQ
             </a>
-            <button className="text-white border bg-gradient-to-r from-[#F89B7D] from-[-20%] to-[#761785] to-90% px-4 py-2 font-bold">
+            <button className="text-white border bg-gradient-to-r from-[#F89B7D] from-[-30%] to-[#761785] to-80% px-4 py-2 font-bold">
               {"Invest Now"}
             </button>
           </div>
         </div>
+      </div>
+      {/* hero section */}
+      <div className="w-full bg-black relative">
+        <Image src={HeroImage} className="w-full" alt="HeroImage" />
+        <div className="w-[70%] absolute h-full top-0 left-0 flex items-center justify-center"></div>
       </div>
     </div>
   );
