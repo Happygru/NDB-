@@ -12,7 +12,7 @@ import NFont from "./../components/text/font";
 import NButton from "./../components/button/index";
 
 import { FaBars } from "react-icons/fa";
-import { RxCross1 } from "react-icons/Rx";
+import { ImCross } from "react-icons/im";
 
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
@@ -37,7 +37,7 @@ export default function Home() {
       <div className="flex justify-between ">
         <div>
           <NButton.menuCrossIconButton onClick={() => toggleDrawer(false)}>
-            <RxCross1 />
+            <ImCross />
           </NButton.menuCrossIconButton>
         </div>
         <div>
