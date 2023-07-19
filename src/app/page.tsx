@@ -7,7 +7,6 @@ import "aos/dist/aos.css";
 
 import Logo from "../../public/images/logo.svg";
 import NanoLogo from "../../public/images/NanoLogo.svg";
-import NDBGenerate from "../../public/images/ndb_generate_background.svg";
 
 import NFont from "./../components/text/font";
 import NButton from "./../components/button/index";
@@ -30,7 +29,6 @@ export default function Home() {
   });
 
   const toggleDrawer = (open: boolean) => {
-    console.log(open);
     setMenuState(open);
   };
 
@@ -201,9 +199,9 @@ export default function Home() {
                 >
                   Incorporating a spherical Silicon Carbide (SiC) semiconductor
                   into cell design provides unique opportunities for optimizing
-                  energy conversion and enhancing the cell's durability. This
-                  innovative form factor represents a significant evolution from
-                  traditional flat-surface semiconductor wafers.
+                  energy conversion and enhancing the cell&apos;s durability.
+                  This innovative form factor represents a significant evolution
+                  from traditional flat-surface semiconductor wafers.
                 </p>
               </div>
               <a
@@ -246,9 +244,9 @@ export default function Home() {
                 >
                   Incorporating a spherical Silicon Carbide (SiC) semiconductor
                   into cell design provides unique opportunities for optimizing
-                  energy conversion and enhancing the cell's durability. This
-                  innovative form factor represents a significant evolution from
-                  traditional flat-surface semiconductor wafers.
+                  energy conversion and enhancing the cell&apos;s durability.
+                  This innovative form factor represents a significant evolution
+                  from traditional flat-surface semiconductor wafers.
                 </p>
               </div>
               <a
