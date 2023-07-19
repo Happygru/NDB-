@@ -15,15 +15,12 @@ import NButton from "./../components/button/index";
 import { FaBars } from "react-icons/fa";
 import { RxCross1 } from "react-icons/Rx";
 
-import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
 
 export default function Home() {
   const [menuState, setMenuState] = useState(false);
