@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import Button from "@mui/material/Button";
+
 const Technology = () => {
   useEffect(() => {
     AOS.init();
@@ -353,7 +355,7 @@ const Technology = () => {
               </p>
             </div>
             <div className="flex flex-col items-center self-stretch">
-              <div className=" w-full flex flex-col table:flex-row justify-center items-start self-stretch display:gap-[128px] table:gap-[78px] phone:gap-[54px] gap-[32px]">
+              <div className=" w-full grid grid-cols-1 table:grid-cols-2 display:gap-[128px] table:gap-[78px] phone:gap-[54px] gap-[32px]">
                 <div className=" flex justify-center items-start gap-[10px] flex-1 w-full">
                   <div className="flex flex-col items-center gap-[32px] w-full">
                     <div
@@ -368,23 +370,112 @@ const Technology = () => {
                         &nbsp;(CONTRACT TERMINATED)
                       </p>
                     </div>
+                    <p className="text-p-36-18 text-mainColor">
+                      The Oak Ridge National Laboratory (ORNL), located in
+                      Tennessee, is the largest U.S. science and energy lab.
+                      Funded by the Department of Energy, ORNL is renowned for
+                      its research in materials, neutron science, and energy,
+                      and houses world-leading supercomputers and neutron
+                      sources.
+                    </p>
+                    <div className=" w-full justify-between flex py-[8px] justify-center items-start gap-[10px] border-t-[1px] border-t-[#C4C4C4] border-b-[1px] border-b-[#C4C4C4]">
+                      <p className=" text-[#A0A0A0] text-p-20-14">Location</p>
+                      <p className=" text-[#141414] text-p-24-14">
+                        Oak Ridge, TN{" "}
+                      </p>
+                    </div>
                   </div>
-                  <div></div>
                 </div>
-                <div className="flex justify-center items-start gap-[10px] flex-1 w-full">
-                  <div className="flex flex-col items-center gap-[32px] w-full">
-                    <div
-                      className="flex h-[287px] w-full bg-cover bg-center phone:h-[300px] table:h-[350px] display:h-[400px]"
-                      style={{
-                        backgroundImage: "url('assets/images/06Media_2.svg')",
-                      }}
-                    ></div>
+                <div className=" flex justify-center items-start gap-[10px] flex-1 w-full h-full">
+                  <div className="flex flex-col items-center gap-[32px] w-full h-full justify-between">
+                    <div className="flex flex-col items-center gap-[32px] w-full h-full justify-start">
+                      <div
+                        className="flex h-[287px] w-full bg-cover bg-center phone:h-[300px] table:h-[350px] display:h-[400px]"
+                        style={{
+                          backgroundImage: "url('assets/images/06Media_2.svg')",
+                        }}
+                      ></div>
+                      <div className=" flex justify-start items-end self-stretch text-start">
+                        <p className="text-p-36-18-500 text-mainColor">
+                          Horologe
+                        </p>
+                      </div>
+                      <p className="text-p-36-18 text-mainColor">
+                        Production Horlogère is a Swiss company that specializes
+                        in assembling watches of various ranges and styles. It
+                        has been in the business since 1974 and has a team of
+                        experienced and skilled workers who can produce more
+                        than 3,000 watches per week.
+                      </p>
+                    </div>
+                    <div className=" w-full justify-between flex py-[8px] items-start gap-[10px] border-t-[1px] border-t-[#C4C4C4] border-b-[1px] border-b-[#C4C4C4]">
+                      <p className=" text-[#A0A0A0] text-p-20-14">Location</p>
+                      <p className=" text-[#141414] text-p-24-14">
+                        Sion, Switzerland
+                      </p>
+                    </div>
                   </div>
-                  <div></div>
                 </div>
               </div>
             </div>
-            <div className=" flex h-[1px] items-center gap-[10px] self-stretch border-b-2 border-b-[#000] p-[10px]"></div>
+            <div className=" hidden table:flex h-[1px] items-center gap-[10px] self-stretch border-b-2 border-b-[#000] p-[10px]"></div>
+          </div>
+        </div>
+      </div>
+      {/*  */}
+      <div className="w-full bg-white">
+        <div className=" m-auto max-w-[1728px]">
+          <div className=" flex flex-col table:flex-row justify-center items-start display:p-[86px] table:p-[42px] phone:p-[21px] py-[72px] display:gap-[86px] table:gap-[64px] phone:gap-[44px] gap-[36px] self-stretch">
+            <div className=" items-center w-full flex-col flex p-[72px] phone:p-[68px]  table:p-[66px] display:p-[64px] gap-[64px]">
+              <div className=" flex-1 flex items-center gap-[10px] self-stretch">
+                <p className="flex-1 text-black text-p-36-18-500">NANO Phone</p>
+                <div className=" flex w-[24px] h-[24px] p-[10px] flex-col items-center gap-[10px] rounded-full bg-black"></div>
+                <p className="text-p-30-14 text-black underline">Reserve</p>
+              </div>
+              <div className="w-full flex flex-col justify-center items-center gap-[64px]">
+                <div className="w-full flex flex-col justify-center gap-[32px]">
+                  <div className="flex display:h-[448px] table:h-[377px] phone:h-[327px] h-[287px] bg-black flex-col justify-center items-center gap-[10px]">
+                    <p className="text-p-36 text-white">Coming Soon</p>
+                  </div>
+                  <div className=" flex-start flex gap-[32px] self-stretch">
+                    <div className=" flex h-[4px] flex-1 items-start rounded-[100px] bg-mainColor"></div>
+                    <div className="flex h-[4px] flex-1 items-start rounded-[100px] bg-[#A0A0A0]"></div>
+                    <div className="flex h-[4px] flex-1 items-start rounded-[100px] bg-[#A0A0A0]"></div>
+                  </div>
+                </div>
+              </div>
+              <Button
+                variant="contained"
+                className="button-30-14-3 !text-white !bg-black"
+              >
+                Learn more
+              </Button>
+            </div>
+            <div className=" items-center w-full flex-col flex p-[72px] phone:p-[68px]  table:p-[66px] display:p-[64px] gap-[64px]">
+              <div className=" flex-1 flex items-center gap-[10px] self-stretch">
+                <p className="flex-1 text-black text-p-36-18-500">NANO Watch</p>
+                <div className=" flex w-[24px] h-[24px] p-[10px] flex-col items-center gap-[10px] rounded-full bg-black"></div>
+                <p className="text-p-30-14 text-black underline">Reserve</p>
+              </div>
+              <div className="w-full flex flex-col justify-center items-center gap-[64px]">
+                <div className="w-full flex flex-col justify-center gap-[32px]">
+                  <div className="flex display:h-[448px] table:h-[377px] phone:h-[327px] h-[287px] bg-black flex-col justify-center items-center gap-[10px]">
+                    <p className="text-p-36 text-white">Coming Soon</p>
+                  </div>
+                  <div className=" flex-start flex gap-[32px] self-stretch">
+                    <div className=" flex h-[4px] flex-1 items-start rounded-[100px] bg-mainColor"></div>
+                    <div className="flex h-[4px] flex-1 items-start rounded-[100px] bg-[#A0A0A0]"></div>
+                    <div className="flex h-[4px] flex-1 items-start rounded-[100px] bg-[#A0A0A0]"></div>
+                  </div>
+                </div>
+              </div>
+              <Button
+                variant="contained"
+                className="button-30-14-3 !text-white !bg-black"
+              >
+                Learn more
+              </Button>
+            </div>
           </div>
         </div>
       </div>

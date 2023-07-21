@@ -5,7 +5,7 @@ import AOS from "aos";
 import Logo from "../assets/images/logo.svg";
 import NanoLogo from "../assets/images/NanoLogo.svg";
 
-import { menuList } from "./menu";
+import { menuList, menuDList } from "./menu";
 
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
@@ -51,9 +51,8 @@ const Header = () => {
         <List>
           <Divider />
           {menuList.map((element) => (
-            <Link to={element.to}>
+            <Link to={element.to} key={element.title}>
               <ListItem
-                key={element.title}
                 disablePadding
                 onClick={() => {
                   toggleDrawer(false);
@@ -92,7 +91,7 @@ const Header = () => {
             />
           </Link>
         </div>
-        {menuList.map((element) => (
+        {menuDList.map((element) => (
           <div
             className=" hidden items-start gap-[10px] p-[10px] table:flex "
             key={element.title}
