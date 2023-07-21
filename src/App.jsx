@@ -1,7 +1,6 @@
 import { useRoutes } from "react-router-dom";
 import { Provider } from "react-redux";
-import AppRoutes from "./routes";
-import "./App.css";
+import AppRoutes from "./route";
 import { store } from "./redux/store";
 import "aos/dist/aos.css";
 
